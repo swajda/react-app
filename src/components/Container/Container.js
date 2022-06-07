@@ -1,11 +1,8 @@
 import styles from './Container.module.scss'
-import Hero from '../Hero/Hero'
-import SearchForm from '../SearchForm/SearchForm'
-import List from '../List/List'
 
-const Container = () => 
+const Container = (props) => 
     <div className={styles.container}>
-        <Hero /><SearchForm /><List />
+        {props.children}
     </div>
 
 export default Container;
