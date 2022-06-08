@@ -5,6 +5,7 @@ import SearchForm from '../SearchForm/SearchForm';
 import { useSelector } from 'react-redux';
 import { getColumnsByList, getListById } from '../../redux/store';
 import { useParams } from 'react-router';
+import { Navigate } from 'react-router-dom';
 
 const List = () => {
 
@@ -13,7 +14,7 @@ const List = () => {
 		listData = useSelector(state => getListById(state, listId))
 
 
-
+	if (!listData) return <Navigate to="/" />
 	return (
 		<div className={styles.list}>
 			<header className={styles.header}>
