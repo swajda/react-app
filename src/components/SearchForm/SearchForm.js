@@ -6,10 +6,10 @@ import { useState } from 'react';
 import { addSearchString } from '../../redux/store';
 
 
-const SearchForm = () => { 
+const SearchForm = () => {    
 
     const dispatch = useDispatch();
-    const [searchString, setSearchString] = useState('');
+    const [searchString, setSearchString] = useState('');    
 
     const handleSubmit = e => {
         e.preventDefault();

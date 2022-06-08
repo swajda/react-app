@@ -5,15 +5,28 @@ nav {
   padding: $base-size;
   font-size: $base-size;
 }
+
 .navBar {
   display: flex;
   justify-content: space-between;
+  a {
+    font-size: 24px;
+    font-weight: bold;
+    color: $color-light;
+    text-decoration: none;
+    padding: 0 5px;
+  }
 }
 
-a {
-  font-size: 24px;
-  font-weight: bold;
-  color: $color-light;
-  text-decoration: none;
-  padding: 0 5px;
+.navitems {
+  ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+  }
 }
+
+.linkActive {
+  color: $color-warning;
+}
+
