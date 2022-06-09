@@ -1,6 +1,7 @@
 import styles from './Card.module.scss';
 import { useDispatch } from 'react-redux';
 import { addFavorite } from '../../redux/store';
+import clsx from 'clsx';
 
 const Card = props => {
 
@@ -9,11 +10,13 @@ const Card = props => {
 
     const handleClick = e => {
         e.preventDefault();
-        //dispatch(addFavorite({favorite: }))
+        dispatch(addFavorite(props.id))
+        console.log(props)
     }
 
-    <li className={styles.card}>{props.title}
-        <button className={'fa fa-star-o'} onClick={handleClick}></button>
+    
+    return <li className={styles.card}>{props.title}
+        <button className={clsx('fa fa-star-o', styles.active)} onClick={handleClick}></button>
     </li>
 }
 export default Card;
