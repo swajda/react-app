@@ -6,7 +6,7 @@ import { useDispatch } from 'react-redux';
 import {  addList } from '../../redux/store';
 import shortid from 'shortid';
 
-const ListForm = (props) => { 
+const ListForm = () => { 
     const [title, setValue] = useState('');
     const [description, setdescription] = useState('');
     const dispatch = useDispatch();

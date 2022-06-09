@@ -10,4 +10,11 @@
     display: flex;
     justify-content: space-between;
     font-weight: bold;
+    button {
+    border: none;
+    text-decoration: none;
+    background: none;
+    cursor: pointer;
+    }
 }
+
