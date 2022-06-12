@@ -16,7 +16,12 @@
     background: none;
     cursor: pointer;
     }
+    li {
+        width: 100%;
+    }
 }
+
+
 
 .active {
 	color: $color-warning;
